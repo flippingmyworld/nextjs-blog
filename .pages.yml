@@ -36,7 +36,10 @@ content:
           # These typically use 'component' or define 'fields' directly.
           - name: hero
             label: Add Hero Section
-            component: hero # Assumes a 'hero' component is defined and that its type is `object`
+            fields:
+              - name: content
+                label: Text Content
+                type: text
           - name: text
             label: Add Text Block
             fields:
